@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Peak Day Out</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-color: #0077b6;
+            --secondary-color: #00b4d8;
+            --background-color: #f0f8ff;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --accent-color: #ffc300;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1572111529147-62d00a5d382f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+        
+        section {
+            background-color: var(--card-bg);
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            bottom: 5px;
+            width: 3px;
+            background-color: var(--secondary-color);
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 5px;
+            width: 13px;
+            height: 13px;
+            background-color: white;
+            border: 3px solid var(--primary-color);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item h3 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+
+        .timeline-item h4 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+        
+        .timeline-item p, ul li {
+            font-size: 1rem;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            padding: 8px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .checklist li::before {
+            content: '✅';
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+        
+        .dinner-list li::before {
+            content: '🍴';
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+
+        strong {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #777;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Peak Day Out</h1>
+        <p>A Full Day Plan for a walk around The Peak (10 AM - 6 PM)</p>
+    </header>
+
+    <div class="container">
+
+        <section id="itinerary">
+            <h2>The Full Day Itinerary</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <h3>10:00 AM - 10:30 AM</h3>
+                    <h4>🤙 Meet Up & Kick-off</h4>
+                    <p>📍 <strong>Location:</strong> The main entrance of the <strong>Peak Galleria</strong>, right by the fountain. It's the perfect spot for everyone to find.</p>
+                    <p>📝 <strong>Plan:</strong> We'll gather here, do a quick headcount, and grab any last-minute water or drinks before we start our adventure!</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>10:30 AM - 12:00 PM</h3>
+                    <h4>🚶‍♂️ The Scenic Peak Circle Walk</h4>
+                    <p>Get ready for the best free views in Hong Kong! We'll tackle the full <strong>Peak Circle Walk</strong>. It's an easy, paved path that's perfect for everyone.</p>
+                    <p>First along <strong>Lugard Road</strong> for insane harbour views, then looping back on <strong>Harlech Road</strong>. This is prime time for group photos and epic IG stories!</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>12:00 PM - 1:30 PM</h3>
+                    <h4>🍔 Lunch Time: Refuel the Team!</h4>
+                    <p>📍 <strong>Location:</strong> Back to the <strong>Peak Galleria</strong>.</p>
+                    <p>📝 <strong>Plan:</strong> Everyone can grab what they want! Hit up <strong>Burger King</strong>, get a coffee, or whatever thing that is edible
+                
+                <div class="timeline-item">
+                    <h3>1:30 PM - 4:00 PM</h3>
+                    <h4>🃏 Poker, Chilling & Music Session</h4>
+                    <p>This is what we've been waiting for! We'll head up to <strong>Victoria Peak Garden</strong> (a chill 15-min walk uphill).</p>
+                    <p>It's got huge lawns and shady spots. We'll find our base, lay down a mat, break out the <strong>poker cards</strong>, play some music, and just hang out for a solid 2.5 hours.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>4:00 PM - 5:00 PM</h3>
+                    <h4>🌇 Golden Hour Views & Group Photo</h4>
+                    <p>Time for the main event! As the sun starts to dip, the lighting is perfect. We'll head to the best FREE viewing spots:</p>
+                    <ul>
+                        <li><strong>The Peak Galleria Rooftop:</strong> An amazing 360° view without paying a cent.</li>
+                        <li><strong>Lions Pavilion:</strong> The classic spot for that postcard-perfect skyline photo.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>5:00 PM - 6:00 PM</h3>
+                    <h4>👋 Winding Down & Goodbyes</h4>
+                    <p>The official plan ends here. Grab a final bubble tea or egg tart. People can start heading down via Bus 15 (scenic route!), minibus, or the Peak Tram.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="dinner">
+            <h2>Dinner Crew: The After-Party Plan 🍜</h2>
+            <p>For the few who are staying for dinner, here are the options:</p>
+            <ul class="dinner-list">
+                <li><strong>Fiamma:</strong> A casual and cool spot in the Peak Galleria for great pizza and pasta. Good vibes guaranteed.</li>
+                <li><strong>The Peak Lookout:</strong> A bit more pricey, but it's a beautiful, historic restaurant with a great atmosphere.</li>
+                <li><strong>The Pro-Move:</strong> Take a bus down to <strong>Central</strong>. We'll have endless, cheaper food options to choose from in Soho or Wellington Street!</li>
+            </ul>
+        </section>
+        
+        <section id="checklist">
+            <h2>Pro-Tips: What to Bring 🎒</h2>
+            <ul class="checklist">
+                <li>A deck of cards </li>
+                <li>Octopus card (topped up!)</li>
+                <li>Portable phone charger / Power bank if needed</li>
+                <li>Water bottle to stay hydrated or just buy water</li>
+                <li>A picnic mat or even just a plastic bag to sit on, or just don't sit on grass</li>
+                <li>A light jacket or hoodie if needed</li>
+                <li>Sounglasses if needed</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Plan by gemini 2.5</p>
+    </footer>
+
+</body>
+</html>
